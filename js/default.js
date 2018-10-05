@@ -1,22 +1,4 @@
-  function shortenNumber(num, digits) {
-      var si = [
-          { value: 1, symbol: "" },
-          { value: 1E3, symbol: "K" },
-          { value: 1E6, symbol: "M" },
-          { value: 1E9, symbol: "B" },
-          { value: 1E12, symbol: "T" },
-          { value: 1E15, symbol: "P" },
-          { value: 1E18, symbol: "E" }
-      ];
-      var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-      var i;
-      for (i = si.length - 1; i > 0; i--) {
-          if (num >= si[i].value) {
-              break;
-          }
-      }
-      return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
-  }
+  
   $(document).ready(function() {
 
       MarginAdjust();
@@ -1032,4 +1014,98 @@ function eraseCookie(name) {
     document.cookie = name+'=; Max-Age=-99999999;';  
 }
 console.log("Ice:"+Number(getCookie("Coal")))
+
+    function shortenNumber(num, digits) {
+        var si = [
+            { value: 1, symbol: "" },
+            { value: 1E3, symbol: "A" },
+            { value: 1E6, symbol: "B" },
+            { value: 1E9, symbol: "C" },
+            { value: 1E12, symbol: "D" },
+            { value: 1E15, symbol: "E" },
+            { value: 1E18, symbol: "F" },
+            { value: 1E21, symbol: "G" },
+            { value: 1E24, symbol: "H" },
+            { value: 1E27, symbol: "I" },
+            { value: 1E30, symbol: "J" },
+            { value: 1E33, symbol: "K" },
+            { value: 1E36, symbol: "L" },
+            { value: 1E39, symbol: "M" },
+            { value: 1E42, symbol: "N" },
+            { value: 1E45, symbol: "O" },
+            { value: 1E48, symbol: "P" },
+            { value: 1E51, symbol: "Q" },
+            { value: 1E54, symbol: "R" },
+            { value: 1E57, symbol: "S" },
+            { value: 1E60, symbol: "T" },
+            { value: 1E63, symbol: "U" },
+            { value: 1E66, symbol: "V" },
+            { value: 1E69, symbol: "W" },
+            { value: 1E72, symbol: "X" },
+            { value: 1E75, symbol: "Y" },
+            { value: 1E78, symbol: "Z" },
+
+            { value: 1E81, symbol: "A2" },
+            { value: 1E84, symbol: "B2" },
+            { value: 1E87, symbol: "C2" },
+            { value: 1E90, symbol: "D2" },
+            { value: 1E93, symbol: "E2" },
+            { value: 1E96, symbol: "F2" },
+            { value: 1E99, symbol: "G2" },
+            { value: 1E102, symbol: "H2" },
+            { value: 1E105, symbol: "I2" },
+            { value: 1E108, symbol: "J2" },
+            { value: 1E111, symbol: "K2" },
+            { value: 1E114, symbol: "L2" },
+            { value: 1E117, symbol: "M2" },
+            { value: 1E120, symbol: "N2" },
+            { value: 1E123, symbol: "O2" },
+            { value: 1E126, symbol: "P2" },
+            { value: 1E129, symbol: "Q2" },
+            { value: 1E132, symbol: "R2" },
+            { value: 1E135, symbol: "S2" },
+            { value: 1E138, symbol: "T2" },
+            { value: 1E141, symbol: "U2" },
+            { value: 1E144, symbol: "V2" },
+            { value: 1E147, symbol: "W2" },
+            { value: 1E150, symbol: "X2" },
+            { value: 1E153, symbol: "Y2" },
+            { value: 1E156, symbol: "Z2" },
+            { value: 1E159, symbol: "A2" },
+            { value: 1E162, symbol: "B3" },
+            { value: 1E165, symbol: "C3" },
+            { value: 1E168, symbol: "D3" },
+            { value: 1E171, symbol: "E3" },
+            { value: 1E174, symbol: "F3" },
+            { value: 1E177, symbol: "G3" },
+            { value: 1E180, symbol: "H3" },
+            { value: 1E183, symbol: "I3" },
+            { value: 1E186, symbol: "J3" },
+            { value: 1E189, symbol: "K3" },
+            { value: 1E192, symbol: "L3" },
+            { value: 1E195, symbol: "M3" },
+            { value: 1E198, symbol: "N3" },
+            { value: 1E201, symbol: "O3" },
+            { value: 1E204, symbol: "P3" },
+            { value: 1E207, symbol: "Q3" },
+            { value: 1E210, symbol: "R3" },
+            { value: 1E213, symbol: "S3" },
+            { value: 1E216, symbol: "T3" },
+            { value: 1E219, symbol: "U3" },
+            { value: 1E222, symbol: "V3" },
+            { value: 1E225, symbol: "W3" },
+            { value: 1E228, symbol: "X3" },
+            { value: 1E231, symbol: "Y3" },
+            { value: 1E234, symbol: "Z3" },
+
+        ];
+        var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+        var i;
+        for (i = si.length - 1; i > 0; i--) {
+            if (num >= si[i].value) {
+                break;
+            }
+        }
+        return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
+    }
   });
