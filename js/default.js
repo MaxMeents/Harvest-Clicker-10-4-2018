@@ -734,7 +734,7 @@ setCookie("Keg", 0, 365)
               $('.Money').html('$' + shortenNumber(Items.Money.Total, 2));
           }, 100)
       }
-
+      
       function Item(Name) {
           I = Items[Name];
           $('.' + Name).find('.Timer').css({ background: Items[Name].Interval.BG_Color })

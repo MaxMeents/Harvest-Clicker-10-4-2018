@@ -1,3 +1,19 @@
+.IncreaseCoal{
+	position: absolute;
+	z-index: 120;
+	top: 172px;
+	left: -39px;;;;;}
+.IncreaseCoalTop{
+	width: 50px;
+	z-index: 122;
+	position: absolute;;;;}
+.IncreaseCoalBackground{
+	z-index: 121;
+	width:68px;
+	height:68px;
+	position: absolute;
+	margin-left: -10px;
+	margin-top: -4px;;;;;}
 .CloseMining{
 	position: absolute;
 	left: 393px;
@@ -152,6 +168,7 @@ position: absolute;top: 96px;left: 0px;z-index: 151;;;;;
 	position: fixed;
 	z-index: 120;
 	overflow: hidden;
+	display: none;;
 	
 }
 
@@ -166,6 +183,7 @@ position: absolute;top: 96px;left: 0px;z-index: 151;;;;;
 	position: fixed;
 	z-index: 120;
 	overflow: scroll;
+	display: none;;
 	
 }
 
